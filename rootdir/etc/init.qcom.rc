@@ -53,6 +53,10 @@ on boot
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
+# FPS Info
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
+
 on post-fs
     # Disable sched autogroup
     write /proc/sys/kernel/sched_autogroup_enabled 0
