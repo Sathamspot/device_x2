@@ -43,7 +43,7 @@ on property:sys.boot_completed=1
     stop vendor.ss_ramdump
 
     # Runtime FS tuning: as we have init boottime setting and kernel patch setting
-    # default readahead to 2048KB. We should adjust the setting upon boot_complete
+    # default readahead to 2048KB. We should adjust the setting up
     # for runtime performance
     write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sda/queue/nr_requests 128
@@ -85,3 +85,8 @@ service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
 
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
+
+on boot
+# FPS Info
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
