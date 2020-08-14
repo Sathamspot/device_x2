@@ -1184,4 +1184,7 @@
     <!-- Whether device has vooc charging support -->
     <bool name="config_hasVoocCharger">true</bool>
 
+    <!-- Whether device supports in-display fingerprint when screen is turned off -->
+    <bool name="config_supportsInDisplayFingerprintGesture">true</bool>
+
 </resources>
