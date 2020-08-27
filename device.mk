@@ -69,6 +69,7 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     devicesettings \
+    RealmeProximityHelper
 
 # Fingerprint
 PRODUCT_PACKAGES += \
