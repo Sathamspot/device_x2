@@ -14,5 +14,7 @@
 <resources>
     <!-- Default state for LiveDisplay -->
     <bool name="config_liveDisplayAvailable">true</bool>
-</resources>
 
+    <!-- Default fod pressed icon -->
+    <integer name="config_pressed_fod_icon">7</integer>
+</resources>
