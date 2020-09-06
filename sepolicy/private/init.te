@@ -1,0 +1,4 @@
+allow init hal_fingerprint_hwservice:hwservice_manager { add find };
+allow init hal_lineage_fod_hwservice:hwservice_manager add;
+allow init hal_lineage_touch_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
