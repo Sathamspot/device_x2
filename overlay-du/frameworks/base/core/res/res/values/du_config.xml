@@ -34,4 +34,7 @@
 
     <!-- Default state for LiveDisplay -->
     <bool name="config_liveDisplayAvailable">true</bool>
+
+    <!-- Custom proximity sensor to be used for pocket detection and doze -->
+    <string name="config_customProximitySensor">"qti.sensor.proximity_fake"</string>
 </resources>
