@@ -6,8 +6,11 @@
 
 $(call inherit-product, device/realme/X2/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Corvus stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
+
+EXTRA_FOD_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := du_X2
